@@ -1,0 +1,105 @@
+/*
+
+CSS rules you may need for reference:
+
+- font-family
+    - Arial, sans-serif
+- line-height
+- color
+- margin
+- padding
+- background-color
+- border-radius
+- border-left
+- border-bottom
+- margin-top
+- padding-left
+- padding-bottom
+- width
+- height
+- margin-bottom
+- font-size
+
+*/
+
+/* Write your CSS code here */
+
+* {
+  font-family: sans-serif;
+}
+
+section h2 {
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-color: aqua;
+}
+
+header h1,
+section table tr th {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+table {
+  margin-bottom: 25px;
+}
+
+table tr {
+  border: none;
+  height: 45px;
+  border-bottom: solid;
+  border-color: rgba(128, 128, 128, 0.084);
+}
+
+section table tr:hover {
+  background-color: steelblue;
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.109);
+}
+
+img:last-child {
+  padding-bottom: 50px;
+}
+
+footer p {
+  color: gray;
+}
+
+section p::first-letter {
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+html body {
+  background-color: white;
+  animation-name: background;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+}
+
+@keyframes background {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: cyan;
+  }
+  50% {
+    background-color: crimson;
+  }
+  75% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+body img:hover {
+  transform: scale(1.1, 1.1);
+}
